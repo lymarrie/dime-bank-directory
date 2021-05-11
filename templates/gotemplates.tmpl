@@ -8,11 +8,6 @@
 <html>
     <body>
         <h1> Welcome to {{.name}}</h1>
-
-        <p>Address: 
-         {{ range $key, $value := .address }}
-           <li><strong>{{ $key }}</strong>: {{ $value }}</li>
-        {{ end }} </p>
         <p>Description: 
            {{ .description }}         
         </p>
