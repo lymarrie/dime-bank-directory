@@ -1,0 +1,26 @@
+{
+    "artifactStructure": {
+        "assets": [
+            {
+                "root": "desktop"
+            }
+        ],
+        "goTemplates": [
+            {
+                "root": "templates"
+            }
+        ]
+    },
+    "dependencies": {
+        "installDepsCmd": "echo install",
+        "requiredFiles": []
+    },
+    "buildArtifacts": {
+        "build_setup_cmd": "echo setup",
+        "build_cmd": "echo hello"
+    },
+    "livePreview": {
+        "serve_setup_cmd": "echo setup",
+        "serve_cmd": "echo serve"
+    }
+}
