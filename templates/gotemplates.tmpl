@@ -1,7 +1,7 @@
 ---
 {
     streamId: "pages-locations", 
-    urlFormat: "{{ .id }}.html"
+    urlFormat: "{{ .id }}"
 }
 ---
 {{define "gotemplates.tmpl" -}}
@@ -11,6 +11,6 @@
         <p>Description: 
            {{ .description }}         
         </p>
-    </body>
+    </body> 
 </html>
 {{end}}
