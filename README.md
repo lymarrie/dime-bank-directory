@@ -1,1 +1,1 @@
-# Simple Streams test
+# Handlebars basic
