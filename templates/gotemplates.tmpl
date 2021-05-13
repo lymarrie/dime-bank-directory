@@ -14,7 +14,11 @@
 
         <h2> Related Products </h2> 
         {{ range .c_relatedProducts }}
-              <li><strong>{{ .name }}</strong></li>
+            <div> 
+                <p> <strong>{{ .name }}</strong> </p>
+                <img src={{ .photoGallery.image.url}}>
+                <p> Price: {{.price.value }} {{.price.currencyCode}} </p>  
+            </div>
         {{ end }}
     </body> 
 </html>
