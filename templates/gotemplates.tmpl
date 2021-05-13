@@ -16,7 +16,7 @@
         {{ range .c_relatedProducts }}
             <div> 
                 <p> <strong>{{ .name }}</strong> </p>
-                 <img src={{ index photoGallery 0 }}>
+                 <img src={{ index .photoGallery 0 }}>
                 <p> Price: {{.price.value }} {{.price.currencyCode}} </p>  
             </div>
         {{ end }}
