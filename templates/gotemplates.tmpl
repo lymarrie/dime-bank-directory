@@ -11,6 +11,11 @@
         <p>Description: 
            {{ .description }}         
         </p>
+
+        <h2> Related Products </h2> 
+        {{ range .c_relatedProducts }}
+              <li><strong>{{ .name }}</strong></li>
+        {{ end }}
     </body> 
 </html>
 {{end}}
