@@ -8,7 +8,7 @@
 	"features": [
 		{
 			"name": "KG HBS EPS",
-			"streamLabel": "streams_pages-locations",
+			"streamLabel": "pages-locations",
 			"handlebarsTemplateEntityPageSet": {
 				"template": "content",
 				"urlTemplate": "url"
