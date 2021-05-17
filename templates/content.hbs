@@ -18,7 +18,10 @@
           <div class='branch-hours'>
             <h4>Branch Hours</h4>
             {{#each hours}}
-              <p>{{this}} </p>
+              <p>{{@index}} </p> 
+              {{#each @index}}
+                <p> {{this}} </p>
+              {{/each}}  
             {{/each}}
           </div>
           
