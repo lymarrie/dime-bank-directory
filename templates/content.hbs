@@ -20,9 +20,11 @@
             {{#each hours}}
               <p>{{@key}} </p> 
               {{#each this}}
-                <p>{{@key}} </p> 
                 {{#each this}}
-                   <p>{{this}} </p> 
+                  {{#each this}}
+                    <p>Opens:{{this.start}}</p>
+                    <p>Closes:{{this.end}}</p>
+                  {{/each}} 
                 {{/each}}
               {{/each}}  
             {{/each}}
