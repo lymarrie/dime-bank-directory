@@ -5,7 +5,7 @@
                 "root": "public"
             }
         ],
-        "goTemplates": [
+        "hbsTemplates": [
             { 
                 "root": "templates"
             }
