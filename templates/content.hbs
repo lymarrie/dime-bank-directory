@@ -2,9 +2,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>{{name}}</title>
+    <title>{{name}} - {{ geomodifier }} </title>
   </head>
     <body>
-        <h1> Welcome to {{name}}</h1>
+        <h1> Welcome to {{name}} - {{ geomodifier }}</h1>
+
+        <div> 
+          <div class='branch-details'>
+            <p>Branch Details</p>
+            <p>{{name}} </p>
+            <p>{{address}} </p>
+            <p>{{phone}} </p>
+          </div>
+
+          <div class='branch-hours'>
+            <p>Branch Hours</p>
+            <p>{{hours}} </p>
+          </div>
+          
+        </div>
+
+
     </body> 
 </html>
