@@ -5,19 +5,21 @@
     <title>{{name}} - {{ geomodifier }} </title>
   </head>
     <body>
-        <h1> Welcome to {{name}} - {{ geomodifier }}</h1>
+        <h1> {{name}} - {{ geomodifier }}</h1>
 
         <div> 
           <div class='branch-details'>
-            <p>Branch Details</p>
+            <h4>Branch Details</h4>
             <p>{{name}} </p>
             <p>{{address}} </p>
             <p>{{phone}} </p>
           </div>
 
           <div class='branch-hours'>
-            <p>Branch Hours</p>
-            <p>{{hours}} </p>
+            <h4>Branch Hours</h4>
+            {{#each hours}}
+              <p>{{this}} </p>
+            {{/each}}
           </div>
           
         </div>
