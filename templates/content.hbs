@@ -11,23 +11,33 @@
           <div class='branch-details'>
             <h4>Branch Details</h4>
             <p>{{name}} </p>
-            <p>{{address}} </p>
-            <p>{{phone}} </p>
+            <p>Address: {{address}} </p>
+            <p>Phone: {{phone}} </p>
           </div>
 
           <div class='branch-hours'>
             <h4>Branch Hours</h4>
-            {{#each hours}}
-              <p>{{@key}} </p> 
-              {{#each this}}
+            <div class='hours-list'>
+              {{#each hours}}
+                <p>{{@key}}
                 {{#each this}}
-                    <p>Opens:{{this.start}}</p>
-                    <p>Closes:{{this.end}}</p>
-                {{/each}}
-              {{/each}}  
-            {{/each}}
+                  {{#each this}}
+                    Opens:{{this.start}} Closes:{{this.end}}
+                  {{/each}}
+                {{/each}} 
+                </p> 
+              {{/each}}
+            </div>
           </div>
-          
+
+          <div class='branch-services'>
+            <h4>Services</h4>
+            <ul class="services-list">
+              {{#each services}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
         </div>
 
 
