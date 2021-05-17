@@ -16,9 +16,21 @@
 		}
 	],
 	"ci_config": {
-		"output_directories": ["templates", "desktop"],
-		"build_setup_cmd": "echo setup",
-		"build_cmd": "echo hello",
+		"base_image_tag": "node-12.18",
+		"artifactStructure": {
+			"assets": [
+				{
+					"root": "public"
+				}
+			],
+			"goTemplates": [
+				{ 
+					"root": "templates"
+				}
+			]
+		},
+		"build_setup_cmd": "npm install",
+		"build_cmd": "npm run build",
 		"serve_setup_cmd": "echo setup",
 		"serve_cmd": "echo serve"
 	}
