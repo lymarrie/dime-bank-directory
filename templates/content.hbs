@@ -6,12 +6,15 @@
   </head>
     <body>
         <h1> {{name}} - {{ geomodifier }}</h1>
-
         <div> 
           <div class='branch-details'>
             <h4>Branch Details</h4>
             <p>{{name}} </p>
-            <p>Address: {{address}} </p>
+            <div> 
+              Address: 
+              <p> {{address.line1}} </p>
+              <p> {{address.city}}, {{address.region}} {{address.postalCode}}</p>
+            </div>
             <p>Phone: {{phone}} </p>
           </div>
 
@@ -22,7 +25,7 @@
                 <p>{{@key}}
                 {{#each this}}
                   {{#each this}}
-                    Opens:{{this.start}} Closes:{{this.end}}
+                    {{this.start}}-{{this.end}}
                   {{/each}}
                 {{/each}} 
                 </p> 
