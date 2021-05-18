@@ -7,41 +7,45 @@
   </head>
     <body>
         <script src="/index.bundle.js"></script>
-        <h1> {{name}} - {{ geomodifier }}</h1>
-        <div> 
-          <div class='branch-details'>
-            <h4>Branch Details</h4>
-            <p>{{name}} </p>
-            <div> 
-              Address: 
-              <p> {{address.line1}} </p>
-              <p> {{address.city}}, {{address.region}} {{address.postalCode}}</p>
+        <div class='header bg-blue-900 pt-6 pb-6 border-b-8 border-indigo-400'> 
+          <h1 class='text-5xl  font-extralight text-white'> {{name}} - {{geomodifier}} </h1>
+        </div>
+        <div class="container mx-auto">
+          <div class='mt-6  flex'> 
+            <div class='branch-details mr-12'>
+              <h4 class='text-2xl font-bold mb-4'>Branch Details</h4>
+              <p>{{name}} </p>
+              <div> 
+                Address: 
+                <p> {{address.line1}} </p>
+                <p> {{address.city}}, {{address.region}} {{address.postalCode}}</p>
+              </div>
+              <p>Phone: {{phone}} </p>
             </div>
-            <p>Phone: {{phone}} </p>
-          </div>
 
-          <div class='branch-hours'>
-            <h4>Branch Hours</h4>
-            <div class='hours-list'>
-              {{#each hours}}
-                <p>{{@key}}
-                {{#each this}}
+            <div class='branch-hours mr-12'>
+              <h4 class='text-2xl font-bold mb-4' >Branch Hours</h4>
+              <div class='hours-list'>
+                {{#each hours}}
+                  <p>{{@key}}
                   {{#each this}}
-                    {{this.start}}-{{this.end}}
-                  {{/each}}
-                {{/each}} 
-                </p> 
-              {{/each}}
+                    {{#each this}}
+                      {{this.start}}-{{this.end}}
+                    {{/each}}
+                  {{/each}} 
+                  </p> 
+                {{/each}}
+              </div>
             </div>
-          </div>
 
-          <div class='branch-services'>
-            <h4>Services</h4>
-            <ul class="services-list">
-              {{#each services}}
-                <li>{{this}}</li>
-              {{/each}}
-            </ul>
+            <div class='branch-services mr-12'>
+              <h4 class='text-2xl font-bold mb-4'>Services</h4>
+              <ul class="services-list">
+                {{#each services}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            </div>
           </div>
         </div>
 
