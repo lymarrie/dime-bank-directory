@@ -14,7 +14,7 @@ module.exports = {
     // ],
     output: {
         filename: 'index.bundle.js',
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, 'desktop'),
         clean: true
     },
     module: {
