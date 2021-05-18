@@ -34,9 +34,9 @@
         <div class='title bg-blue-900 pt-6 pb-6 border-b-8 border-indigo-400'> 
           <h1 class='text-5xl  font-extralight text-white ml-6'> {{name}} - {{geomodifier}} </h1>
         </div>
-        <div class="container mx-auto">
+        <div class="container mx-auto px-72">
           <div class='mt-6  flex'> 
-            <div class='branch-details mr-12'>
+            <div class='branch-details pr-32'>
               <h4 class='text-2xl font-bold mb-4'>Branch Details</h4>
               <p>{{name}} </p>
               <div> 
@@ -47,7 +47,7 @@
               <p>Phone: {{phone}} </p>
             </div>
 
-            <div class='branch-hours mr-12'>
+            <div class='branch-hours pr-32'>
               <h4 class='text-2xl font-bold mb-4' >Branch Hours</h4>
               <div class='hours-list'>
                 {{#each hours}}
@@ -62,7 +62,7 @@
               </div>
             </div>
 
-            <div class='branch-services mr-12'>
+            <div class='branch-services pr-32'>
               <h4 class='text-2xl font-bold mb-4'>Services</h4>
               <ul class="services-list list-disc">
                 {{#each services}}
